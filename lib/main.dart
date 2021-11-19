@@ -29,7 +29,6 @@ class MyApp extends StatelessWidget {
       store: store,
       child: MaterialApp(
         title: 'Epigram Demo',
-        // navigatorObservers: [TransitionRouteObserver()],
         initialRoute: initialRoute,
         routes: {
           '/cash_summary': (context) => const CashSummaryScreen(),
