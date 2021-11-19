@@ -1,19 +1,18 @@
 import 'package:flutter/material.dart';
 
 class AppState {
-  CrossFadeState? crossFade;
+  String? cash;
 
-  AppState({this.crossFade});
+  AppState({this.cash});
 
   AppState.copyWith({
     required AppState prev,
-
-    CrossFadeState? crossFade,
+    String? cash,
   }) {
-    this.crossFade = crossFade ?? prev.crossFade;
+    this.cash = cash ?? prev.cash;
   }
 
   AppState.initial() {
-    this.crossFade = CrossFadeState.showFirst;
+    this.cash = '0,00€';
   }
 }

@@ -1,15 +1,13 @@
-
 import 'package:flutter/cupertino.dart';
 
 abstract class Action {}
 
 class Convert extends Action {}
 
-class UpdateCrossfade extends Action {
+class UpdateIncome extends Action {
   String payload;
 
-  UpdateCrossfade(
+  UpdateIncome(
     this.payload,
   );
 }
-
